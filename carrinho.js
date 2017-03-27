@@ -46,6 +46,14 @@ var evtUndo = function (event) {
     atualizaDados();
 }
 
+var daDestaque = function(){
+   $(this).addClass("hovering");
+}
+
+var tiraDestaque = function(){
+    $(this).removeClass("hovering");
+}
+
 var aposInicializado = function () {
     atualizaDados();
 
@@ -57,6 +65,8 @@ var aposInicializado = function () {
             umaPropaganda().insertAfter($(this));
         })
     })
+
+    $("tbody tr").hover(daDestaque,tiraDestaque);
 };
 
 

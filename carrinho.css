@@ -86,3 +86,7 @@ input[type=button] {
 	margin: 2em 0;
 }
 
+.hovering{
+	background: #ccc;
+}
+
