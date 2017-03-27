@@ -1,3 +1,13 @@
+var umaPropaganda = function(){
+    var propagandas= ["Deseja comprar uma moto?", "Deseja comprar um carro?", "Deseja comprar uma casa?","Deseja comprar um celular?"];
+    var posicao = Math.floor(propagandas.length * Math.random());
+    var tr = $("<tr>").addClass("propaganda");
+    tr.append($("<td>"));
+    tr.find("td").attr("colspan",6).text(propagandas[posicao]);
+
+    return tr;
+}
+
 var atualizaDados = function () {
     var carrinhos = $(".carrinho");
 
@@ -41,6 +51,12 @@ var aposInicializado = function () {
 
     $(".remove-item").click(evtRemove);
     $(".undo").click(evtUndo);
+
+    $(".carrinho").each(function(){
+        $(this).find("tr:nth-child(3n), tr:last").each(function(){
+            umaPropaganda().insertAfter($(this));
+        })
+    })
 };
 
 
