@@ -5,6 +5,11 @@
 </head>
 
 <body>
+	<h2>Geral</h2>
+	
+	<a href="" class="alterna-propaganda">Esconder Propaganda</a>
+	<a href="" class="alterna-propaganda" id="mostra-propaganda">Mostrar Propaganda</a>
+	
 	<div class="carrinho">
 		<h2>Carrinho entrega em Sao Paulo</h2>
 		<table>
@@ -64,13 +69,13 @@
 			<input type="button" value="Undo" class="undo">
 		</div>
 
-		<div>
+		<div class="resumo">
 			Valor total: R$<span class="valor-total">0</span>
 			<br/> Quantidade de Itens: <span class="quantidade-de-itens">0</span>
 		</div>
 	</div>
 
-	
+
 
 	<div class="carrinho">
 		<h2>Carrinho entrega em Vitoria</h2>
@@ -99,7 +104,7 @@
 			<input type="button" value="Undo" class="undo">
 		</div>
 
-		<div>
+		<div class="resumo">
 			Valor total: R$<span class="valor-total">0</span>
 			<br/> Quantidade de Itens: <span class="quantidade-de-itens">0</span>
 		</div>
@@ -127,14 +132,14 @@
 					<td class="total">399.98</td>
 					<td><a class="remove-item" href="">REMOVER</a> </td>
 				</tr>
-				
+
 			</tbody>
 		</table>
 		<div>
 			<input type="button" value="Undo" class="undo">
 		</div>
 
-		<div>
+		<div class="resumo">
 			Valor total: R$<span class="valor-total">0</span>
 			<br/> Quantidade de Itens: <span class="quantidade-de-itens">0</span>
 		</div>
@@ -143,7 +148,10 @@
 
 
 	<script src="jquery-3.2.0.min.js"></script>
-	<script src="carrinho.js"></script>
+	<script src="inicializa.js"></script>
+	<script src="events.js"></script>
+	<script src="propaganda.js"></script>
+	<script src="atualizaDados.js"></script>
 </body>
 
 </html>
